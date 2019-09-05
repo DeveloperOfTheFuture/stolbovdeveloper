@@ -9,6 +9,10 @@ body, html {
     background-color: #fbfbfb;
 }
 
+body {
+    min-width: 1350px;
+}
+
 h2 {
     font-size: 54px;
     line-height: 60px;
@@ -97,7 +101,6 @@ h3 {
     position: relative;
     background: url("../img/bg-1.png") no-repeat 100% 100%;
     background-size: contain;
-    min-width: 1350px;
 }
 
 .offer__inner {
