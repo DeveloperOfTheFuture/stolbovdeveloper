@@ -30,4 +30,14 @@ $(function(){
     });
 
     $(".offer__img").addClass('active');
+
+    $(".offer__btn").click(function(){
+        $(".wrap").css("display", "block");
+        $("body").css("overflow-y", "hidden");
+    });
+
+    $(".modal-form__btn").click(function(){
+        $(".wrap").css("display", "none");
+        $("body").css("overflow-y", "auto");
+    });
   });

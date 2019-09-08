@@ -11,6 +11,7 @@ body, html {
 
 body {
     min-width: 1350px;
+    position: relative;
 }
 
 h2 {
@@ -91,6 +92,7 @@ h3 {
     color: #1f1f24;
     font-size: 25px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 /*  Блок с фотографией и фоном */
@@ -113,9 +115,14 @@ h3 {
     display: none;
 }
 
+.offer__main-pic {
+    display: block;
+}
+
 .offer__title {
     font-size: 80px;
     color: #1f1f24;
+    line-height: 88px;
 }
 
 .offer__text {
@@ -128,10 +135,16 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     background-color: #ff4e2e;
+    border: 1px solid #ff4e2e;
     color: #fff;
-    border: none;
     padding: 15px 40px;
     cursor: pointer;
+}
+
+.offer__btn:hover {
+    background-color: #fff;
+    color: #f53f4f;
+    border: 1px solid #f82370;
 }
 
 .offer__btn_color_white {
@@ -141,6 +154,11 @@ h3 {
     padding: 12px 45px; 
     font-size: 16px;
     cursor: pointer;
+}
+
+.offer__btn_color_white:hover {
+    background-color: #ff4e2e;
+    color: #fff;
 }
 
 .offer__pic {
@@ -167,7 +185,7 @@ h3 {
     transform: rotate(30deg);
 }
 .offer__img-2 {
-    top: 250px;
+    top: 150px;
     left: 200px;
 }
 .offer__img-2.active {
@@ -185,14 +203,14 @@ h3 {
     left: 50%;
 }
 .offer__img-4.active {
-    transform: rotate(-15deg) translateX(-50%) scale(0.8);
+    transform: rotate(-15deg) translateX(-10%) scale(0.8);
 }
 .offer__img-5 {
     bottom: 100px;
-    left: 50%;
+    left: 5%;
 }
 .offer__img-5.active {
-    transform: rotate(15deg) translateX(-50%);
+    transform: rotate(15deg);
 }
 
 /* Блок "Что я делаю" */
@@ -250,6 +268,10 @@ h3 {
 
 .slider__wrap {
     position: relative;
+}
+
+.slider__item {
+    text-decoration: none;
 }
 
 .slider__inner {
@@ -352,13 +374,13 @@ h3 {
 
 .price__img-1 {
     top: 50px;
-    left: 150px;
+    left: 80px;
 }
 .price__img-1.active {
-    transform: rotate(30deg);
+    transform: rotate(30deg) scale(0.7);
 }
 .price__img-2 {
-    bottom: 50px;
+    bottom: 10px;
     left: 250px;
      
 }
@@ -370,7 +392,8 @@ h3 {
     right: 400px;
 }
 .price__img-3.active {
-    transform: rotate(20deg);
+    bottom: 15px;
+    transform: rotate(20deg) scale(0.7);
 }
 .price__img-4 {
     top: 70px;
@@ -434,6 +457,8 @@ h3 {
 .footer__text {
     font-size: 25px;
     padding-left: 20px;
+    color: #000;
+    text-decoration: none;
 }
 
 .footer__right-column {
@@ -478,4 +503,61 @@ h3 {
     color: #fff;
     text-align: center;
     padding: 30px 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 1;
+}
+
+.modal-form {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 10% auto 0;
+    padding: 10px 20px 40px;
+}
+
+.modal-form__btn {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+label {
+    color: #8993ad;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 5px 15px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #ff4e2e;
+}
+
+.form__btn {
+    font-size: 18px;
+    background-color: #ff4e2e;
+    border: 1px solid #ff4e2e;
+    color: #fff;
+    padding: 15px 40px;
+    cursor: pointer;
 }
