@@ -68,13 +68,13 @@
     }
 
     .offer__img-1 {
-        top: 50px;
+        top: 20px;
         left: 100px;
     }
 
     .offer__img-2 {
         top: initial;
-        bottom: 20px;
+        bottom: 10px;
         left: 50px;
     }
 
@@ -90,9 +90,6 @@
     }
 
     .offer__img-5 {
-        /* bottom: 150px;
-        left: initial;
-        right: 20px; */
         display: none;
     }
 
@@ -157,6 +154,10 @@
         top: initial;
         bottom: 30px;
         right: 50px;
+    }
+
+    .modal-form {
+        width: 60%;
     }
 }
 
@@ -370,6 +371,15 @@
 
     .social__link {
         margin-right: 10px;
+    }
+
+    .modal-form {
+        width: 90%;
+        text-align: center;
+    }
+
+    .modal-form__title {
+        font-size: 35px;
     }
 }
 
